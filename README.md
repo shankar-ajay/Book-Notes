@@ -140,12 +140,6 @@ book.notes = marked(book.notes);
 
 ---
 
-## 📄 License
-
-MIT License — Feel free to use, modify, and share.
-
----
-
 ## ✍️ Author
 
 **Ajay Shankar**  
