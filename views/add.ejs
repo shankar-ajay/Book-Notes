@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Add a Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS for Add Book Page -->
+  <link rel="stylesheet" href="/styles/add.css" />
+</head>
+
+<body>
+  <div class="container py-5">
+    <div class="form-container">
+      <h1 class="text-center mb-4">📚 Add a Book</h1>
+      <form action="/add" method="POST">
+        <div class="mb-3">
+          <label for="title" class="form-label">Book Title</label>
+          <input type="text" class="form-control" id="title" name="title" required placeholder="e.g. Atomic Habits" />
+        </div>
+
+        <div class="mb-3">
+          <label for="author" class="form-label">Author</label>
+          <input type="text" class="form-control" id="author" name="author" required placeholder="e.g. James Clear" />
+        </div>
+
+        <div class="mb-3">
+          <label for="isbn" class="form-label">ISBN (optional but recommended)</label>
+          <input type="text" class="form-control" id="isbn" name="isbn" placeholder="e.g. 9780735211292" />
+        </div>
+
+        <div class="mb-3">
+          <label for="rating" class="form-label">Rating (out of 10)</label>
+          <input type="number" class="form-control" id="rating" name="rating" required min="1" max="10" />
+        </div>
+
+        <div class="mb-3">
+          <label for="date_read" class="form-label">Date Finished</label>
+          <input type="date" class="form-control" id="date_read" name="date_read" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="notes" class="form-label">Your Notes / Review</label>
+          <textarea class="form-control" id="notes" name="notes" rows="8" required placeholder="Write your thoughts, insights, or a review... 🧠✍️"></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-custom btn-lg px-4">
+            ➕ Add Book
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

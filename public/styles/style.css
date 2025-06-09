@@ -1,0 +1,48 @@
+/* /public/styles/style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 255, 100, 0.15);
+}
+
+img.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff33;
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+/* .custom-dark-green {
+    color: #116530;     
+    font-weight: 600;    
+}*/
+
+.custom-title-color {
+  color: #17c1c8;  /* Vibrant Cyan */
+  font-weight: 600;
+}
+
