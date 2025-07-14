@@ -143,4 +143,3 @@ book.notes = marked(book.notes);
 ## ✍️ Author
 
 **Ajay Shankar**  
-📧 Contact: [Your Email or Portfolio URL Here]
